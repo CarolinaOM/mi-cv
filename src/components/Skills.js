@@ -1,33 +1,33 @@
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import {
-  faCode,
-  faLaptopCode,
-  faDatabase,
-  faTools,
-  faPalette,
-  faTerminal,
-  faServer,
-  faDesktop
-} from '@fortawesome/free-solid-svg-icons';
+// src/components/Skills.js
+import React from 'react';
 import './Skills.css';
 
-export default function Skills() {
+const Skills = () => {
   return (
-    <section className="cv-section" id="skills">
-      <h2 className="cv-section__title">
-        <FontAwesomeIcon icon={faTools} className="icon-skills" />
-        Habilidades
-      </h2>
+    <div className="cv-section">
+      <h2 className="cv-section__title">🛠️ Habilidades</h2>
       <div className="cv-section__body">
-        <ul className="skills-list">
-          <li><FontAwesomeIcon icon={faCode} /> <strong>Lenguajes:</strong> JavaScript, HTML, CSS, PHP, Java, Flutter</li>
-          <li><FontAwesomeIcon icon={faLaptopCode} /> <strong>Frameworks:</strong> Vue.js, Node.js, WordPress, React</li>
-          <li><FontAwesomeIcon icon={faDatabase} /> <strong>Bases de datos:</strong> SQL, Access</li>
-          <li><FontAwesomeIcon icon={faPalette} /> <strong>Herramientas:</strong> Git, Canva</li>
-          <li><FontAwesomeIcon icon={faDesktop} /> <strong>Sistemas operativos:</strong> Windows, Linux</li>
-        </ul>
+        <div className="skills-category">
+          <strong>💻 Lenguajes:</strong> JavaScript, HTML, CSS, PHP, Java, Flutter
+        </div>
+        <div className="skills-category">
+          <strong>🧩 Frameworks:</strong> Vue.js, Node.js, WordPress
+        </div>
+        <div className="skills-category">
+          <strong>🗃️ Bases de datos:</strong> SQL, Access
+        </div>
+        <div className="skills-category">
+          <strong>🛠 Herramientas:</strong> Git, Canva
+        </div>
+        <div className="skills-category">
+          <strong>🖥️ Sistemas operativos:</strong> Windows, Linux
+        </div>
       </div>
-    </section>
+    </div>
   );
-}
+};
+
+export default Skills;
+
+
 

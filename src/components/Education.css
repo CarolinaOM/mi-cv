@@ -26,3 +26,17 @@
   vertical-align: middle;
 }
 
+.education-item {
+  display: inline-block;
+  padding: 1rem;
+  margin-bottom: 1.5rem;
+  background-color: #e6f7ff;
+  border-left: 4px solid #0077b6;
+  border-radius: 6px;
+  box-sizing: border-box;
+  width: fit-content;         
+  max-width: 100%;           
+}
+
+
+
