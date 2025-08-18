@@ -21,7 +21,7 @@ function Header() {
         <p>
           <FaLinkedin className="icon linkedin" />
           <a
-            href="https://www.linkedin.com/in/carolina-ordonez-morales"
+            href="https://www.linkedin.com/in/carolina-ordo%C3%B1ez-morales/"
             target="_blank"
             rel="noopener noreferrer"
           >

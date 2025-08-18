@@ -1,0 +1,26 @@
+.cv-section {
+  padding: 40px 60px;
+  font-family: 'Segoe UI', sans-serif;
+  color: #333;
+}
+
+.cv-section__title {
+  font-size: 1.8rem;
+  margin-bottom: 20px;
+  color: #222;
+}
+
+.cv-section__body {
+  text-align: justify;
+  line-height: 1.8;
+  font-size: 1.10rem;
+  padding: 0 40px; 
+  max-width: none; 
+}
+
+.icon-gray {
+  font-size: 1rem;
+  color: #9b9b9b !important;  /* Gris */
+  margin-right: 10px;
+  vertical-align: middle;
+}

@@ -1,0 +1,24 @@
+.skills-list {
+  list-style: none;
+  padding-left: 0;
+  line-height: 1.8;
+  font-size: 1.15rem;
+}
+
+.skills-list li {
+  margin-bottom: 10px;
+  display: flex;
+  align-items: center;
+}
+
+.skills-list li svg {
+  margin-right: 10px;
+  color: #2a9d8f;
+}
+
+ .icon-skills {
+  font-size: 1.5rem; /* Igual que los otros iconos */
+  color: #2a9d8f !important;
+  margin-right: 10px;
+  vertical-align: middle;
+}
