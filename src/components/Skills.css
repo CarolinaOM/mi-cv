@@ -1,25 +1,54 @@
-.cv-section {
+.skills-section {
+  background: linear-gradient(135deg, #0f766e, #14b8a6); /* verde azulado vibrante */
+  color: #fff;
   padding: 40px 60px;
   font-family: 'Segoe UI', sans-serif;
-  color: #333;
 }
 
-.cv-section__title {
+.skills-title {
   font-size: 1.8rem;
   margin-bottom: 20px;
-  color: #222;
+  color: #fff;
+  display: flex;
+  align-items: center;
 }
 
-.cv-section__body {
-  text-align: justify;
-  line-height: 1.8;
-  font-size: 1.10rem;
-  padding: 0 40px;
-  margin: 0;
-  max-width: none;
+.skills-icon {
+  width: 20px;
+  height: 20px;
+  margin-right: 10px;
+  vertical-align: middle;
+  color: #fff !important;
+}
+
+/* 🧱 Cuadro interno con fondo suave */
+.skills-box {
+  background-color: rgba(255, 255, 255, 0.1); /* semi-transparente sobre verde */
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  padding: 25px 35px;
+  margin-top: 10px;
+  transition: box-shadow 0.3s ease;
+}
+
+.skills-box:hover {
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.3);
 }
 
 .skills-category {
+  display: flex;
+  align-items: center;
+  gap: 10px;
   margin-bottom: 1rem;
+  font-size: 1.1rem;
+  line-height: 1.6;
+  text-align: justify;
 }
 
+.icon-skill {
+  width: 18px;
+  height: 18px;
+  color: #fff;
+  flex-shrink: 0;
+  vertical-align: middle;
+}

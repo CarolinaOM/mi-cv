@@ -1,26 +1,36 @@
-.cv-section {
+.about-section {
   padding: 40px 60px;
   font-family: 'Segoe UI', sans-serif;
   color: #333;
 }
 
-.cv-section__title {
+.section-title.about-title {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  text-align: left;
   font-size: 1.8rem;
   margin-bottom: 20px;
   color: #222;
 }
 
-.cv-section__body {
+.section-body.about-body {
   text-align: justify;
   line-height: 1.8;
   font-size: 1.10rem;
-  padding: 0 40px; 
-  max-width: none; 
+  padding: 0 40px;
+  margin: 0;
+  max-width: none;
 }
 
 .icon-gray {
-  font-size: 1rem;
-  color: #9b9b9b !important;  /* Gris */
+  width: 20px;
+  height: 20px;
   margin-right: 10px;
   vertical-align: middle;
+  color: #9b9b9b;
+}
+
+.about-me {
+  margin-bottom: 10px; /* Reduce el espacio debajo del texto */
 }

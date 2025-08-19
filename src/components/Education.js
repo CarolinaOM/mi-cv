@@ -1,18 +1,18 @@
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faGraduationCap } from '@fortawesome/free-solid-svg-icons'; // para Educación
+import { GraduationCap } from 'lucide-react';
 import './Education.css';
 
 export default function Education() {
   return (
-    <section className="cv-section" id="education">
-      <h2 className="cv-section__title">
-        <FontAwesomeIcon icon={faGraduationCap} className="icon-blue" />
+    <section className="education-section" id="education">
+      <h2 className="education-title">
+        <GraduationCap className="education-icon" stroke="white" />
         Educación
       </h2>
-      <p className="cv-section__body">
-        Ingeniería de Sistemas (2016) — Homologado a Grado en Tecnologías de la Información y la Comunicación
-      </p>
+      <div className="education-entry">
+        <strong>Ingeniería de Sistemas</strong><br />
+        Universidad Nacional — 2016<br />
+        Homologado a Grado en Tecnologías de la Información y la Comunicación
+      </div>
     </section>
   );
 }
-

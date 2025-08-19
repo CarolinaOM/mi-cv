@@ -1,5 +1,5 @@
 import './Header.css';
-import { FaEnvelope, FaMapMarkerAlt, FaLinkedin, FaGithub } from 'react-icons/fa';
+import { Mail, MapPin, Linkedin, Github } from 'lucide-react';
 
 function Header() {
   return (
@@ -11,15 +11,15 @@ function Header() {
 
       <div className="header-right">
         <p>
-          <FaEnvelope className="icon email" />
+          <Mail className="icon email" />
           carolinaisabelom@gmail.com
         </p>
         <p>
-          <FaMapMarkerAlt className="icon location" />
+          <MapPin className="icon location" />
           Tenerife, España
         </p>
         <p>
-          <FaLinkedin className="icon linkedin" />
+          <Linkedin className="icon linkedin" />
           <a
             href="https://www.linkedin.com/in/carolina-ordo%C3%B1ez-morales/"
             target="_blank"
@@ -29,7 +29,7 @@ function Header() {
           </a>
         </p>
         <p>
-          <FaGithub className="icon github" />
+          <Github className="icon github" />
           <a
             href="https://github.com/CarolinaOM"
             target="_blank"

@@ -2,15 +2,14 @@
 import React from 'react';
 import Education from './Education';
 import Skills from './Skills';
+import Experience from './Experience';
 import './ResumeLayout.css';
 
 const ResumeLayout = () => {
   return (
     <div className="resume-container">
-      <div className="left-column">
+      <div className="full-column">
         <Education />
-      </div>
-      <div className="right-column">
         <Skills />
       </div>
     </div>

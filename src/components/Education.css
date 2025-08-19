@@ -1,42 +1,51 @@
-.cv-section {
-  padding: 40px 60px;
+.education-section {
+  background: linear-gradient(135deg, #1e3a8a, #9333ea);
+  color: #fff;
+  padding: 30px 40px;
+  margin: 20px auto; /* ⬅️ antes era 40px, ahora menos separación */
+  max-width: 800px;
+  border-radius: 12px;
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.2);
   font-family: 'Segoe UI', sans-serif;
-  color: #333;
+  transition: transform 0.3s ease;
+  margin-top: 10px; /* Antes probablemente era 40px o más */
 }
 
-.cv-section__title {
+.education-section:hover {
+  transform: scale(1.02); /* efecto sutil al pasar el mouse */
+}
+
+.education-title {
   font-size: 1.8rem;
+  font-weight: bold;
   margin-bottom: 20px;
-  color: #222;
+  text-transform: none;
+  letter-spacing: 1px;
+  display: flex;
+  align-items: center;
 }
 
-.cv-section__body {
-  text-align: justify;
-  line-height: 1.8;
-  font-size: 1.10rem;
-  padding: 0 40px;
-  margin: 0;
-  max-width: none;
-}
-
-.icon-blue {
-  font-size: 1rem;
-  color: #0077b6 !important;  /* Azul */
+.icon-white {
+  font-size: 1.2rem;
+  color: #ffffff !important; /* blanco puro */
   margin-right: 10px;
   vertical-align: middle;
 }
 
-.education-item {
-  display: inline-block;
+.education-entry {
+  background-color: rgba(255, 255, 255, 0.1);
   padding: 1rem;
-  margin-bottom: 1.5rem;
-  background-color: #e6f7ff;
-  border-left: 4px solid #0077b6;
-  border-radius: 6px;
-  box-sizing: border-box;
-  width: fit-content;         
-  max-width: 100%;           
+  border-left: 4px solid #9333ea;
+  border-radius: 8px;
+  font-size: 1.15rem;
+  line-height: 1.6;
 }
 
-
-
+.education-icon {
+  width: 24px;
+  height: 24px;
+  margin-right: 10px;
+  vertical-align: middle;
+  stroke: white !important; /* fuerza el color blanco */
+  color: white !important;  /* por si se usa fill en lugar de stroke */
+}

@@ -1,33 +1,43 @@
-// src/components/Skills.js
-import React from 'react';
+import {
+  Code,
+  Boxes,
+  Database,
+  Wrench,
+  Monitor
+} from 'lucide-react';
 import './Skills.css';
 
 const Skills = () => {
   return (
-    <div className="cv-section">
-      <h2 className="cv-section__title">🛠️ Habilidades</h2>
-      <div className="cv-section__body">
+    <section className="skills-section" id="skills">
+      <h2 className="skills-title">
+        <Wrench className="skills-icon" />
+        Habilidades
+      </h2>
+      <div className="skills-box">
         <div className="skills-category">
-          <strong>💻 Lenguajes:</strong> JavaScript, HTML, CSS, PHP, Java, Flutter
+          <Code className="icon-skill" />
+          <span><strong>Lenguajes:</strong> JavaScript, HTML, CSS, PHP, Java, Flutter</span>
         </div>
         <div className="skills-category">
-          <strong>🧩 Frameworks:</strong> Vue.js, Node.js, WordPress
+          <Boxes className="icon-skill" />
+          <span><strong>Frameworks:</strong> Vue.js, Node.js, WordPress</span>
         </div>
         <div className="skills-category">
-          <strong>🗃️ Bases de datos:</strong> SQL, Access
+          <Database className="icon-skill" />
+          <span><strong>Bases de datos:</strong> SQL, Access</span>
         </div>
         <div className="skills-category">
-          <strong>🛠 Herramientas:</strong> Git, Canva
+          <Wrench className="icon-skill" />
+          <span><strong>Herramientas:</strong> Git, Canva</span>
         </div>
         <div className="skills-category">
-          <strong>🖥️ Sistemas operativos:</strong> Windows, Linux
+          <Monitor className="icon-skill" />
+          <span><strong>Sistemas operativos:</strong> Windows, Linux</span>
         </div>
       </div>
-    </div>
+    </section>
   );
 };
 
 export default Skills;
-
-
-

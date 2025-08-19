@@ -1,28 +1,69 @@
-.icon-experience {
-  font-size: 1rem;
-  color: #e76f51 !important;  /* Naranja terracota */
-  margin-right: 10px;
-  vertical-align: middle;
+.experience-section {
+  padding: 40px 60px;
+  font-family: 'Segoe UI', sans-serif;
+  color: #333;
 }
 
-.job-entry {
+.experience-title {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  text-align: left;
+  font-size: 1.8rem;
+  margin-bottom: 20px;
+  color: #222;
+  padding: 0 60px;
+}
+
+.experience-body {
+  text-align: left;
+  line-height: 1.8;
+  font-size: 1.10rem;
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 0 40px;
+}
+
+.experience-entry {
   margin-bottom: 30px;
+  border-bottom: 1px solid #ddd;
+  padding-bottom: 20px;
+  margin-bottom: 20px;
 }
 
-.job-title {
+.experience-job-title {
   font-weight: bold;
   font-size: 1.2rem;
   margin-bottom: 5px;
 }
 
-.job-dates {
+.experience-job-dates {
   font-style: italic;
   color: #666;
   margin-bottom: 10px;
 }
 
-.job-details {
+.experience-job-details {
   list-style-type: disc;
   padding-left: 20px;
-  line-height: 1.6;
+  margin: 0;
+}
+
+.experience-icon {
+  width: 20px;
+  height: 20px;
+  margin-right: 10px;
+  vertical-align: middle;
+  color: #e76f51;
+}
+
+.linked-company {
+  color: #9333ea;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.linked-company:hover {
+  text-decoration: underline;
+  color: #6b21a8;
 }
