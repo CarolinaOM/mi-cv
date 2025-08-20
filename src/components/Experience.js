@@ -1,4 +1,4 @@
-import { Briefcase } from 'lucide-react';
+import { Briefcase, Globe } from 'lucide-react';
 import './Experience.css';
 
 export default function Experience() {
@@ -22,7 +22,10 @@ export default function Experience() {
 
         <div className="experience-entry">
           <h3 className="experience-job-title">
-            Programadora Web – <a href="https://repuestosuruguay.es/" target="_blank" rel="noopener noreferrer" className="linked-company">REPUESTOS URUGUAY</a>
+            Programadora Web – REPUESTOS URUGUAY
+            <a href="https://repuestosuruguay.es/" target="_blank" rel="noopener noreferrer" className="company-icon-link">
+              <Globe className="company-icon" />
+            </a>
           </h3>
           <p className="experience-job-dates">Febrero 2022 – Marzo 2023</p>
           <ul className="experience-job-details">
@@ -34,7 +37,10 @@ export default function Experience() {
 
         <div className="experience-entry">
           <h3 className="experience-job-title">
-            Docente de Ingeniería Informática – <a href="https://www.techtitute.com/" target="_blank" rel="noopener noreferrer" className="linked-company">TECH Universidad Tecnológica</a>
+            Docente de Ingeniería Informática – TECH Universidad Tecnológica
+            <a href="https://www.techtitute.com/" target="_blank" rel="noopener noreferrer" className="company-icon-link">
+              <Globe className="company-icon" />
+            </a>
           </h3>
           <p className="experience-job-dates">Abril 2020 – Octubre 2021</p>
           <ul className="experience-job-details">
@@ -46,7 +52,10 @@ export default function Experience() {
 
         <div className="experience-entry">
           <h3 className="experience-job-title">
-            Grabadora de Datos – <a href="https://serviciosestadisticos.es/" target="_blank" rel="noopener noreferrer" className="linked-company">Servicios Estadísticos de Canarias</a>
+            Grabadora de Datos – Servicios Estadísticos de Canarias
+            <a href="https://serviciosestadisticos.es/" target="_blank" rel="noopener noreferrer" className="company-icon-link">
+              <Globe className="company-icon" />
+            </a>
           </h3>
           <p className="experience-job-dates">Junio 2018 – Julio 2018</p>
           <ul className="experience-job-details">
@@ -76,7 +85,10 @@ export default function Experience() {
 
         <div className="experience-entry">
           <h3 className="experience-job-title">
-            Prácticas en Gestión de Riesgos – <a href="https://www.citi.com/" target="_blank" rel="noopener noreferrer" className="linked-company">CITIBANK</a>
+            Prácticas en Gestión de Riesgos – CITIBANK
+            <a href="https://www.citi.com/" target="_blank" rel="noopener noreferrer" className="company-icon-link">
+              <Globe className="company-icon" />
+            </a>
           </h3>
           <p className="experience-job-dates">Octubre 2015 – Marzo 2016</p>
           <ul className="experience-job-details">

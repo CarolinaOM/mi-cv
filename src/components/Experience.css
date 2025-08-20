@@ -1,10 +1,10 @@
 .experience-section {
-  padding: 40px 60px;
+  padding: 40px 120px; /* antes 80px */
   font-family: 'Segoe UI', sans-serif;
   color: #333;
 }
 
-.experience-title {
+/*.experience-title {
   display: flex;
   align-items: center;
   justify-content: flex-start;
@@ -12,8 +12,9 @@
   font-size: 1.8rem;
   margin-bottom: 20px;
   color: #222;
-  padding: 0 60px;
-}
+  padding-left: 120px;
+  padding-right: 0;
+}*/
 
 .experience-body {
   text-align: left;
@@ -21,7 +22,7 @@
   font-size: 1.10rem;
   max-width: 800px;
   margin: 0 auto;
-  padding: 0 40px;
+  padding: 0 80px; /* antes 60px */
 }
 
 .experience-entry {
@@ -35,6 +36,10 @@
   font-weight: bold;
   font-size: 1.2rem;
   margin-bottom: 5px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  flex-wrap: wrap;
 }
 
 .experience-job-dates {
@@ -55,6 +60,24 @@
   margin-right: 10px;
   vertical-align: middle;
   color: #e76f51;
+}
+
+.company-icon-link {
+  display: inline-block;
+}
+
+.company-icon {
+  width: 20px;
+  height: 20px;
+  color: #9333ea;
+  margin-left: 6px;
+  margin-top: 2px;
+  transition: transform 0.2s ease, color 0.2s ease;
+}
+
+.company-icon-link:hover .company-icon {
+  transform: scale(1.2);
+  color: #6b21a8;
 }
 
 .linked-company {
