@@ -2,17 +2,18 @@
   background: linear-gradient(135deg, #1e3a8a, #9333ea);
   color: #fff;
   padding: 30px 40px;
-  margin: 20px auto; /* ⬅️ antes era 40px, ahora menos separación */
+  margin: 20px auto;
   max-width: 800px;
   border-radius: 12px;
   box-shadow: 0 6px 16px rgba(0, 0, 0, 0.2);
   font-family: 'Segoe UI', sans-serif;
   transition: transform 0.3s ease;
-  margin-top: 10px; /* Antes probablemente era 40px o más */
+  margin-top: 10px;
+  text-align: center;
 }
 
 .education-section:hover {
-  transform: scale(1.02); /* efecto sutil al pasar el mouse */
+  transform: scale(1.02);
 }
 
 .education-title {
@@ -21,15 +22,10 @@
   margin-bottom: 20px;
   text-transform: none;
   letter-spacing: 1px;
-  display: flex;
+  display: inline-flex;
   align-items: center;
-}
-
-.icon-white {
-  font-size: 1.2rem;
-  color: #ffffff !important; /* blanco puro */
-  margin-right: 10px;
-  vertical-align: middle;
+  justify-content: center;
+  gap: 10px;
 }
 
 .education-entry {
@@ -39,6 +35,9 @@
   border-radius: 8px;
   font-size: 1.15rem;
   line-height: 1.6;
+  margin: 0 auto;
+  max-width: 700px;
+  text-align: justify;
 }
 
 .education-icon {
@@ -46,7 +45,6 @@
   height: 24px;
   margin-right: 10px;
   vertical-align: middle;
-  stroke: white !important; /* fuerza el color blanco */
-  color: white !important;  /* por si se usa fill en lugar de stroke */
+  stroke: white !important;
+  color: white !important;
 }
-
