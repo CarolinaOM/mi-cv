@@ -1,5 +1,6 @@
 import { FolderGit2 } from 'lucide-react';
 import snakeGameImg from '../assets/images/snake-game.png';
+import rpsGameImg from '../assets/images/piedra-papel-tijera-game.png';
 import './Proyect.css';
 
 export default function Proyect({ language }) {
@@ -9,20 +10,42 @@ export default function Proyect({ language }) {
       intro: `Aquí te muestro algunos de los proyectos que he realizado durante mi formación y experiencia como desarrolladora.  
       Cada uno refleja mi evolución, creatividad y compromiso con el aprendizaje constante.  
       Desde páginas web personales hasta aplicaciones interactivas, cada proyecto ha sido una oportunidad para crecer y aplicar lo aprendido.`,
-      projectTitle: 'Snake Game',
-      projectDescription: `Juego clásico de la serpiente desarrollado con React, JavaScript, HTML y CSS.  
-      Interactivo, rápido y perfecto para practicar lógica, eventos del teclado y manejo de estado.`,
-      buttonText: 'Ver proyecto',
+      projects: [
+        {
+          title: 'Snake Game',
+          description: `Juego clásico de la serpiente desarrollado con React, JavaScript, HTML y CSS.  
+          Interactivo, rápido y perfecto para practicar lógica, eventos del teclado y manejo de estado.`,
+          image: snakeGameImg,
+          link: 'https://admirable-mousse-027031.netlify.app/',
+        },
+        {
+          title: 'Piedra, Papel o Tijera',
+          description: `Juego interactivo donde compites contra el sistema. Elige una figura y descubre si ganas, pierdes o empatas. ¡Juega tantas veces como quieras!`,
+          image: rpsGameImg,
+          link: 'https://rock-paper-scissors-arena.netlify.app/',
+        },
+      ],
     },
     en: {
       title: 'My Completed Projects',
       intro: `Here are some of the projects I’ve completed during my training and experience as a developer.  
       Each one reflects my growth, creativity, and commitment to continuous learning.  
       From personal websites to interactive applications, every project has been an opportunity to grow and apply what I’ve learned.`,
-      projectTitle: 'Snake Game',
-      projectDescription: `Classic snake game developed with React, JavaScript, HTML, and CSS.  
-      Interactive, fast, and perfect for practicing logic, keyboard events, and state management.`,
-      buttonText: 'View Project',
+      projects: [
+        {
+          title: 'Snake Game',
+          description: `Classic snake game developed with React, JavaScript, HTML, and CSS.  
+          Interactive, fast, and perfect for practicing logic, keyboard events, and state management.`,
+          image: snakeGameImg,
+          link: 'https://admirable-mousse-027031.netlify.app/',
+        },
+        {
+          title: 'Rock, Paper, Scissors',
+          description: `Interactive game where you compete against the system. Choose a shape and see if you win, lose, or draw. Play as many times as you like!`,
+          image: rpsGameImg,
+          link: 'https://rock-paper-scissors-arena.netlify.app/',
+        },
+      ],
     },
   };
 
@@ -39,20 +62,22 @@ export default function Proyect({ language }) {
         {selected.intro}
       </p>
 
-      <div className="project-card">
-        <h3 className="project-title">{selected.projectTitle}</h3>
-        <img src={snakeGameImg} alt="Snake Game" className="project-image-small" />
-        <p className="section-body about-body">
-          {selected.projectDescription}
-        </p>
-        <a
-          href="https://admirable-mousse-027031.netlify.app/"
-          target="_blank"
-          rel="noopener noreferrer"
-          className="project-button"
-        >
-          {selected.buttonText}
-        </a>
+      <div className="projects-grid">
+        {selected.projects.map((project, index) => (
+          <div className="project-card" key={index}>
+            <h3 className="project-title">{project.title}</h3>
+            <img src={project.image} alt={project.title} className="project-image-small" />
+            <p className="section-body about-body">{project.description}</p>
+            <a
+              href={project.link}
+              target="_blank"
+              rel="noopener noreferrer"
+              className={`project-button ${index === 1 ? 'habilidades-color' : ''}`}
+            >
+              Ver proyecto
+            </a>
+          </div>
+        ))}
       </div>
     </section>
   );
