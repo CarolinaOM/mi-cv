@@ -6,12 +6,12 @@ import Experience from './Experience';
 import './ResumeLayout.css';
 import About from './About';
 
-const ResumeLayout = () => {
+const ResumeLayout = ({ language }) => {
   return (
     <div className="resume-container">
       <div className="full-column">
-        <Education />
-        <Skills />
+        <Education language={language} /> {/* ← ¡Aquí se pasa correctamente! */}
+        <Skills language={language} />
       </div>
     </div>
   );

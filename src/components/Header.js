@@ -1,22 +1,27 @@
 import './Header.css';
 import { Mail, MapPin, Linkedin, Github } from 'lucide-react';
+import LanguageToggle from './LanguageToggle';
 
-function Header() {
+function Header({ language, onLanguageChange }) {
   return (
     <header className="header-container">
       <div className="header-left">
         <h1>Carolina Ordoñez</h1>
-        <h2>Desarrolladora Frontend</h2>
+        <h2>{language === 'es' ? 'Desarrolladora Frontend' : 'Frontend Developer'}</h2>
       </div>
 
       <div className="header-right">
+        {/* ✅ Banderas alineadas encima del correo */}
+        <div className="language-wrapper">
+          <LanguageToggle onLanguageChange={onLanguageChange} language={language} />
+        </div>
         <p>
           <Mail className="icon email" />
           carolinaisabelom@gmail.com
         </p>
         <p>
           <MapPin className="icon location" />
-          Tenerife, España
+          {language === 'es' ? 'Tenerife, España' : 'Tenerife, Spain'}
         </p>
         <p>
           <Linkedin className="icon linkedin" />
@@ -39,6 +44,7 @@ function Header() {
           </a>
         </p>
       </div>
+
     </header>
   );
 }

@@ -1,38 +1,48 @@
-.proyect-card-vertical {
-  width: 100%;
-  max-width: 400px;
-  margin: 0 auto 24px;
+/* Elimina fondo blanco y sombra */
+.project-card {
+  padding: 20px;
+  margin-top: 40px;
   text-align: center;
+  background-color: transparent;
+  box-shadow: none;
+  border: none;
+}
+
+/* Título del proyecto */
+.project-title {
+  font-size: 1.4rem;
+  font-weight: bold;
+  margin-bottom: 15px;
+  color: #333;
   font-family: 'Segoe UI', sans-serif;
 }
 
-.proyect-img-top {
-  width: 100px;
-  height: 140px;
-  object-fit: contain;
+/* Imagen más pequeña y centrada */
+.project-image-small {
+  max-width: 230px;
+  height: auto;
+  display: block;
+  margin: 0 auto 20px auto;
+  border-radius: 8px;
+}
+
+.project-button {
+  display: block;
+  margin: 20px auto 0 auto;
+  padding: 10px 20px;
+  background: linear-gradient(135deg, #1e3a8a, #9333ea); /* Degradado Educación */
+  color: #fff;
+  font-weight: 600;
   border-radius: 6px;
-  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
-  margin-bottom: 12px;
-}
-
-.proyect-card-vertical h3 {
-  margin: 0 0 8px;
-  font-size: 1.2rem;
-  color: #333;
-}
-
-.proyect-card-vertical p {
-  margin: 0 0 8px;
-  font-size: 0.95rem;
-  color: #555;
-}
-
-.proyect-card-vertical a {
-  color: #007acc;
   text-decoration: none;
-  font-weight: bold;
+  font-family: 'Segoe UI', sans-serif;
+  transition: transform 0.2s ease, filter 0.2s ease;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+  border: none;
+  width: fit-content;
 }
 
-.proyect-card-vertical a:hover {
-  text-decoration: underline;
+.project-button:hover {
+  transform: scale(1.05);
+  filter: brightness(1.1);
 }

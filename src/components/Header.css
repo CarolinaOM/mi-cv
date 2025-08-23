@@ -78,6 +78,43 @@
   text-decoration: underline;
 }
 
+.language-toggle {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 10px; /* 👈 Esto da espacio entre banderas y correo */
+}
+
+
+.flag-icon {
+  width: 32px;
+  height: 24px;
+  cursor: pointer;
+  transition: transform 0.2s ease;
+}
+
+.flag-icon:hover {
+  transform: scale(1.1);
+}
+
+.contact-language-row {
+  display: flex;
+  justify-content: flex-start;
+  gap: 10px;
+  margin-bottom: 10px;
+}
+
+.language-toggle button {
+  background: none;
+  border: none;
+  padding: 0;
+}
+
+.language-wrapper {
+  display: flex;
+  justify-content: flex-end;
+}
+
+
 /* 📱 Responsive: para pantallas pequeñas */
 @media (max-width: 600px) {
   .header-container {
@@ -93,4 +130,21 @@
   .header-right p {
     justify-content: center;
   }
+
+  .language-wrapper {
+    justify-content: center;
+    width: 100%;
+  }
+
+  .developer-text {
+    margin-bottom: 10px;
+  }
+
+  /* o bien */
+  .language-toggle {
+    margin-top: 10px;
+  }
+
 }
+
+
