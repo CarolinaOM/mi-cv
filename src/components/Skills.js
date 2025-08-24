@@ -36,7 +36,7 @@ export default function Skills({ language }) {
   return (
     <section className="skills-section" id="skills">
       <h2 className="skills-title">
-        <Wrench className="skills-icon" />
+        <Wrench className="skills-icon" stroke="white" />
         {selected.title}
       </h2>
       <div className="skills-box">
