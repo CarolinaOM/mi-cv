@@ -6,7 +6,7 @@
 
 /* Título de la sección */
 .section-title.about-title {
-  font-size: 2rem;
+  font-size: 1.8rem;
   font-weight: bold;
   margin-bottom: 20px;
   display: flex;
@@ -14,15 +14,18 @@
   gap: 10px;
   color: #1e293b;
   font-family: 'Segoe UI', sans-serif;
+  justify-content: center;
+  text-align: center;
 }
 
 /* Texto introductorio */
 .section-body.about-body {
-  font-size: 1rem;
-  line-height: 1.6;
+  font-size: 1.10rem;
+  line-height: 1.8;
   color: #374151;
   margin-bottom: 30px;
   font-family: 'Segoe UI', sans-serif;
+  text-align: justify; /* Ajuste para coincidir con Experience */
 }
 
 /* Grid de proyectos en dos columnas */
@@ -65,28 +68,37 @@
   width: 100%;
   max-width: 230px;
   height: 150px;
-  object-fit: contain; /* Muestra toda la imagen sin recortar */
+  object-fit: contain;
   display: block;
   margin: 0 auto 20px auto;
   border-radius: 8px;
-  background-color: #fff; /* Opcional: para que se vea bien si la imagen no llena el espacio */
+  background-color: #fff;
 }
 
-/* Botón del proyecto */
+/* Botón del proyecto (diseño general) */
 .project-button {
   display: block;
   margin: 20px auto 0 auto;
   padding: 10px 20px;
-  background: linear-gradient(135deg, #1e3a8a, #9333ea);
   color: #fff;
   font-weight: 600;
   border-radius: 6px;
   text-decoration: none;
   font-family: 'Segoe UI', sans-serif;
   transition: transform 0.2s ease, filter 0.2s ease;
-  box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
   border: none;
   width: fit-content;
+}
+
+/* Degradado azul/morado para el primer botón (Snake Game) */
+.projects-grid .project-card:first-child .project-button {
+  background: linear-gradient(135deg, #1e3a8a, #9333ea);
+}
+
+/* Degradado verde para el segundo botón (Piedra, Papel o Tijera) */
+.projects-grid .project-card:nth-child(2) .project-button {
+  background: linear-gradient(135deg, #0f766e, #14b8a6);
 }
 
 .project-button:hover {
