@@ -91,13 +91,13 @@
   width: fit-content;
 }
 
-/* Degradado azul/morado para el primer botón (Snake Game) */
-.projects-grid .project-card:first-child .project-button {
+/* Degradado azul/morado para los botones de los proyectos que corresponden a ese color */
+.blue-gradient-button {
   background: linear-gradient(135deg, #1e3a8a, #9333ea);
 }
 
-/* Degradado verde para el segundo botón (Piedra, Papel o Tijera) */
-.projects-grid .project-card:nth-child(2) .project-button {
+/* Degradado verde para los botones de los proyectos que corresponden a ese color */
+.green-gradient-button {
   background: linear-gradient(135deg, #0f766e, #14b8a6);
 }
 
