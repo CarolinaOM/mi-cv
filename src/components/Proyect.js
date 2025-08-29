@@ -4,6 +4,7 @@ import rpsGameImg from '../assets/images/piedra-papel-tijera-game.png';
 import latableduchefImg from '../assets/images/La Table Du Chef.png';
 import repuestosuruguayImg from '../assets/images/Repuestos Uruguay.png';
 import femautoImg from '../assets/images/Femauto.png';
+import disneyImg from '../assets/images/Disney.png';
 import './Proyect.css';
 
 export default function Proyect({ language }) {
@@ -25,6 +26,12 @@ export default function Proyect({ language }) {
           description: `Juego interactivo donde compites contra el sistema. Elige una figura y descubre si ganas, pierdes o empatas. ¡Juega tantas veces como quieras!`,
           image: rpsGameImg,
           link: 'https://rock-paper-scissors-arena.netlify.app/',
+        },
+        {
+          title: 'Buscador Disney',
+          description: `Un buscador interactivo donde al seleccionar una letra del abecedario, puedes descubrir si existen personajes de Disney que comiencen con esa letra. Si los hay, se muestra una foto y una breve descripción.`,
+          image: disneyImg,
+          link: 'https://genuine-biscochitos-a2635d.netlify.app/', // ⬅️ ¡Dirección actualizada!
         },
       ],
       professionalProjects: [
@@ -66,6 +73,12 @@ export default function Proyect({ language }) {
           image: rpsGameImg,
           link: 'https://rock-paper-scissors-arena.netlify.app/',
         },
+        {
+          title: 'Disney Finder',
+          description: `An interactive search tool where you can select a letter of the alphabet to discover if there are Disney characters whose names start with that letter. If so, a photo and a brief description are displayed.`,
+          image: disneyImg,
+          link: 'https://genuine-biscochitos-a2635d.netlify.app/', // ⬅️ ¡Dirección actualizada!
+        },
       ],
       professionalProjects: [
         {
@@ -81,7 +94,7 @@ export default function Proyect({ language }) {
           link: 'https://repuestosuruguay.es/',
         },
         {
-          title: 'Taller Femauto',
+          title: `Taller Femauto`,
           description: `Development of modules and updates for the workshop website using HTML, CSS, Python, and Bootstrap.`,
           image: femautoImg,
           link: 'https://www.tallerfemauto.es/',
@@ -93,8 +106,8 @@ export default function Proyect({ language }) {
   const selected = content[language] || content['es'];
 
   const getButtonClass = (title) => {
-    const blueProjects = ['Snake Game', 'La Table Du Chef', 'Taller Femauto'];
-    const greenProjects = ['Piedra, Papel o Tijera', 'Repuestos Uruguay'];
+    const blueProjects = ['Buscador Disney', 'Disney Finder', 'Snake Game', 'La Table Du Chef', 'Taller Femauto'];
+    const greenProjects = ['Piedra, Papel o Tijera', 'Rock, Paper, Scissors', 'Repuestos Uruguay'];
     
     if (blueProjects.includes(title)) {
       return 'blue-gradient-button';
