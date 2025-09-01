@@ -53,19 +53,19 @@
 
 /* Colores oficiales por ícono */
 .email {
-  color: #D44638; /* Gmail rojo */
+  color: #D44638;
 }
 
 .location {
-  color: #4CAF50; /* Verde tipo Google Maps */
+  color: #4CAF50;
 }
 
 .linkedin {
-  color: #0077B5; /* Azul LinkedIn */
+  color: #0077B5;
 }
 
 .github {
-  color: #333; /* Gris oscuro GitHub */
+  color: #333;
 }
 
 /* Estilo para enlaces */
@@ -81,9 +81,8 @@
 .language-toggle {
   display: flex;
   gap: 10px;
-  margin-bottom: 10px; /* 👈 Esto da espacio entre banderas y correo */
+  margin-bottom: 10px;
 }
-
 
 .flag-icon {
   width: 32px;
@@ -114,8 +113,7 @@
   justify-content: flex-end;
 }
 
-
-/* 📱 Responsive: para pantallas pequeñas */
+/* ✅ Corrección: para pantallas pequeñas */
 @media (max-width: 600px) {
   .header-container {
     flex-direction: column;
@@ -129,6 +127,11 @@
 
   .header-right p {
     justify-content: center;
+    margin: 4px 0; /* ✅ Reducimos el margen vertical */
+  }
+
+  .header-right svg {
+    font-size: 1.5rem; /* ✅ Aumenta el tamaño del ícono */
   }
 
   .language-wrapper {
@@ -140,11 +143,7 @@
     margin-bottom: 10px;
   }
 
-  /* o bien */
   .language-toggle {
     margin-top: 10px;
   }
-
 }
-
-

@@ -6,6 +6,7 @@
 
 .App {
   text-align: center;
+  overflow-x: hidden; /* ✅ Añadido para prevenir cualquier desbordamiento horizontal */
 }
 
 .App-logo {
@@ -46,4 +47,3 @@
 h2 {
   text-align: left;
 }
-

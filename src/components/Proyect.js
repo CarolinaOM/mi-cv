@@ -11,7 +11,7 @@ import './Proyect.css';
 export default function Proyect({ language }) {
   const content = {
     es: {
-      title: 'Mis proyectos realizados',
+      title: 'Mis proyectos',
       intro: `Aquí te muestro algunos de los proyectos que he realizado durante mi formación y experiencia como desarrolladora. Cada uno refleja mi evolución, creatividad y compromiso con el aprendizaje constante.`,
       personalProjectsTitle: 'Proyectos Personales',
       professionalProjectsTitle: 'Proyectos Profesionales',
@@ -61,7 +61,7 @@ export default function Proyect({ language }) {
           link: 'https://repuestosuruguay.es/',
         },
         {
-          title: 'Taller Femauto',
+          title: `Taller Femauto`,
           description: `Realización de módulos y actualización de la web del taller utilizando HTML, CSS, Python y Bootstrap.`,
           image: femautoImg,
           link: 'https://www.tallerfemauto.es/',
@@ -69,7 +69,7 @@ export default function Proyect({ language }) {
       ],
     },
     en: {
-      title: 'My Completed Projects',
+      title: 'My Projects',
       intro: `Here are some of the projects I’ve completed during my training and experience as a developer. Each one reflects my growth, creativity, and commitment to continuous learning.`,
       personalProjectsTitle: 'Personal Projects',
       professionalProjectsTitle: 'Professional Projects',
@@ -148,7 +148,7 @@ export default function Proyect({ language }) {
       <div className="project-card" key={index}>
         <h3 className="project-title">{project.title}</h3>
         <img src={project.image} alt={project.title} className="project-image-small" />
-        <p className="section-body about-body">{project.description}</p>
+        <p className="project-description">{project.description}</p>
         <div className="button-container">
           <a
             href={project.link}
@@ -175,7 +175,8 @@ export default function Proyect({ language }) {
 
   return (
     <section className="cv-section about-section" id="projects">
-      <h2 className="section-title about-title">
+      {/* ✅ La clase "projects-title" ahora es única y no afecta a "Acerca de mí" */}
+      <h2 className="section-title projects-title">
         <FolderGit2 className="icon-gray" />
         {selected.title}
       </h2>

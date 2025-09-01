@@ -18,8 +18,32 @@
   text-align: center;
 }
 
+/* Título de la sección de proyectos */
+.section-title.projects-title {
+  font-size: 1.8rem;
+  font-weight: bold;
+  margin-bottom: 20px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: #1e293b;
+  font-family: 'Segoe UI', sans-serif;
+  justify-content: center;
+  text-align: center;
+}
+
 /* Texto introductorio */
 .section-body.about-body {
+  font-size: 1.10rem;
+  line-height: 1.8;
+  color: #374151;
+  margin-bottom: 30px;
+  font-family: 'Segoe UI', sans-serif;
+  text-align: justify;
+}
+
+/* Texto de la descripción de la tarjeta */
+.project-description {
   font-size: 1.10rem;
   line-height: 1.8;
   color: #374151;
@@ -78,15 +102,15 @@
 /* Contenedor flexible para alinear los botones */
 .button-container {
   display: flex;
-  justify-content: center; /* Centra los botones horizontalmente */
-  gap: 15px; /* Espacio entre los botones */
-  margin-top: 20px; /* Margen superior para separarlos de la descripción */
+  justify-content: center;
+  gap: 15px;
+  margin-top: 20px;
 }
 
 /* Botón del proyecto (diseño general) */
 .project-button {
-  padding: 10px 18px; /* Reducimos el padding horizontal */
-  font-size: 0.9rem; /* Reducimos el tamaño de la fuente */
+  padding: 10px 18px;
+  font-size: 0.9rem;
   color: #fff;
   font-weight: 600;
   border-radius: 6px;
@@ -95,7 +119,7 @@
   transition: transform 0.2s ease, filter 0.2s ease;
   box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
   border: none;
-  white-space: nowrap; /* Evita que el texto del botón se rompa en varias líneas */
+  white-space: nowrap;
 }
 
 /* Degradado azul/morado para los botones de los proyectos que corresponden a ese color */
@@ -113,24 +137,37 @@
   filter: brightness(1.1);
 }
 
-/* Responsive: una columna en móviles */
+/* ✅ Media query con el selector de clase único */
 @media (max-width: 768px) {
+  /* Título principal de la sección de proyectos */
+  .section-title.projects-title {
+    font-size: 1.6rem;
+    justify-content: center !important; /* Centra el título principal */
+    padding: 0 10px !important;
+  }
+  
+  /* Títulos de "Proyectos Personales" y "Proyectos Profesionales" */
+  h3 {
+    text-align: center;
+    padding: 0 20px;
+  }
+  
   .projects-grid {
     grid-template-columns: 1fr;
+    gap: 20px;
+    padding: 0 20px !important;
   }
 
   .project-card {
     width: 100%;
     min-height: auto;
+    /* ✅ Quitamos el padding aquí y usamos el del grid para centrar */
+    padding: 0 !important; 
   }
 
   .project-image-small {
     height: auto;
     max-width: 100%;
     object-fit: contain;
-  }
-
-  .section-title.about-title {
-    font-size: 1.6rem;
   }
 }

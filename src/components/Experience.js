@@ -163,7 +163,8 @@ export default function Experience({ language }) {
     <section className="experience-section" id="experience">
       <h2 className="experience-title">
         <Briefcase className="experience-icon" />
-        {selected.title}
+        {/* ✅ Envuelve el título en un span para agruparlo */}
+        <span>{selected.title}</span>
       </h2>
       <div className="experience-body">
         {selected.entries.map((entry, index) => (
