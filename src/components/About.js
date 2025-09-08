@@ -20,8 +20,9 @@ export default function About({ language }) {
   };
 
   return (
-    <section className="cv-section about-section" id="about">
-      <h2 className="section-title about-title">
+    <section className="cv-section" id="about"> 
+      {/* ✅ Cambiado el className para que use solo section-title */}
+      <h2 className="section-title">
         <User className="icon-gray" />
         {content[language].title}
       </h2>

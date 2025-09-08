@@ -3,7 +3,8 @@ import {
   Boxes,
   Database,
   Wrench,
-  Monitor
+  Monitor,
+  Lightbulb // ✅ Added Lightbulb icon
 } from 'lucide-react';
 import './Skills.css';
 
@@ -36,7 +37,7 @@ export default function Skills({ language }) {
   return (
     <section className="skills-section" id="skills">
       <h2 className="skills-title">
-        <Wrench className="skills-icon" stroke="white" />
+        <Lightbulb className="skills-icon" stroke="white" /> {/* ✅ Icono de título cambiado */}
         {selected.title}
       </h2>
       <div className="skills-box">

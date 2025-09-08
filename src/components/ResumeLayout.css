@@ -1,26 +1,32 @@
 /* src/components/ResumeLayout.css */
 .resume-container {
-  display: flex;
-  justify-content: center;
-  padding: 2rem;
+    display: flex;
+    justify-content: center;
+    padding: 2rem;
+    padding-top: 0px;
+    padding-bottom: 0px;
 }
 
 .full-column {
-  width: 100%;
-  max-width: 900px;
-  background-color: #fff;
-  padding: 1rem;
-  border-radius: 8px;
+    width: 100%;
+    max-width: 900px; /* ✅ Define un ancho máximo para toda la columna */
+    background-color: #fff;
+    padding: 1rem;
+    border-radius: 8px;
 }
 
 /* Espaciado entre secciones */
 .full-column > *:not(:last-child) {
-  margin-bottom: 2rem;
+    margin-bottom: 2rem;
 }
 
 /* Responsive para móviles */
 @media (max-width: 768px) {
-  .resume-container {
-    padding: 1rem;
-  }
+    .resume-container {
+        padding: 0;
+    }
+
+    .full-column {
+        padding: 1rem; /* ✅ Añade un padding en los bordes de la columna para móviles */
+    }
 }

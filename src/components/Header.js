@@ -1,5 +1,5 @@
 import './Header.css';
-import { Mail, MapPin, Linkedin, Github } from 'lucide-react';
+import { Mail, MapPin, Linkedin, Github, X } from 'lucide-react';
 import LanguageToggle from './LanguageToggle';
 
 function Header({ language, onLanguageChange }) {
@@ -11,7 +11,6 @@ function Header({ language, onLanguageChange }) {
       </div>
 
       <div className="header-right">
-        {/* ✅ Banderas alineadas encima del correo */}
         <div className="language-wrapper">
           <LanguageToggle onLanguageChange={onLanguageChange} language={language} />
         </div>
@@ -43,8 +42,17 @@ function Header({ language, onLanguageChange }) {
             GitHub
           </a>
         </p>
+        <p>
+          <X className="icon x-icon" />
+          <a
+            href="https://x.com/CarolinaIsa13"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            X (Twitter)
+          </a>
+        </p>
       </div>
-
     </header>
   );
 }

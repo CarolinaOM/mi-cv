@@ -6,18 +6,18 @@ export default function Education({ language }) {
     es: {
       title: 'Educación',
       degree: 'Ingeniería de Sistemas',
-      university: 'Universidad Bicentenaria de Aragua — 2016',
+      university: 'Universidad Bicentenaria de Aragua\u00A0—\u00A02016', // ✅ Espacios no separables aquí
       homologation: 'Homologado a Grado en Tecnologías de la Información y la Comunicación',
     },
     en: {
       title: 'Education',
       degree: 'Systems Engineering',
-      university: 'Bicentennial University of Aragua — 2016',
+      university: 'Bicentennial University of Aragua\u00A0—\u00A02016', // ✅ Espacios no separables aquí
       homologation: 'Validated as a Bachelor’s Degree in Information and Communication Technologies',
     },
   };
 
-  const selected = content[language] || content['es']; // Fallback a español si el idioma no existe
+  const selected = content[language] || content['es'];
 
   return (
     <section className="education-section" id="education">

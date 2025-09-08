@@ -1,0 +1,99 @@
+.experience-page-container {
+    padding: 40px;
+    max-width: 900px;
+    margin: 0 auto;
+    font-family: 'Segoe UI', sans-serif;
+    color: #333;
+    line-height: 1.6;
+}
+
+.page-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.experience-page-title {
+    font-size: 2.2rem;
+    color: #000;
+    margin: 0;
+    font-size: 2.2rem;
+    color: #000;
+    margin: 0;
+    text-align: center; /* ✅ Centra el texto del título en pantallas grandes */
+    flex-grow: 1; /* Permite que el título ocupe el espacio disponible para centrarse */
+}
+
+.back-button {
+    display: inline-block;
+    margin-bottom: 20px;
+    padding: 12px 25px;
+    background: linear-gradient(135deg, #1e3a8a, #9333ea);
+    color: white;
+    text-decoration: none;
+    border-radius: 25px;
+    font-weight: bold;
+    transition: all 0.3s ease;
+    border: none;
+}
+
+.back-button:hover {
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+    transform: translateY(-2px);
+}
+
+.experience-body {
+    background-color: #f9f9f9;
+    padding: 20px 40px;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.experience-entry {
+    margin-bottom: 30px;
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 20px;
+}
+
+.experience-entry:last-child {
+    border-bottom: none;
+    margin-bottom: 0;
+}
+
+.experience-job-title {
+    font-weight: bold;
+    font-size: 1.2rem;
+    margin-bottom: 5px;
+    color: #000;
+    display: flex;
+    align-items: center;
+    gap: 8px; /* Este espacio separa el icono del globo del texto */
+}
+
+.experience-job-dates {
+    font-style: italic;
+    color: #666;
+    margin-bottom: 10px;
+}
+
+.experience-job-details {
+    list-style-type: disc;
+    padding-left: 20px;
+    margin: 0;
+}
+
+@media (max-width: 768px) {
+  .page-header {
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+  }
+
+  .back-button {
+    width: 90%;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}

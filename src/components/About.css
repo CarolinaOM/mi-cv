@@ -1,35 +1,58 @@
+/* Estilos para el contenedor de la sección 'Acerca de mí' */
 .about-section {
-  padding: 30px 40px;
-  margin: 20px auto;
-  max-width: 800px;
-  font-family: 'Segoe UI', sans-serif;
-  color: #333;
-  text-align: center;
+    padding: 30px 40px 0px; 
+    margin: 20px auto 0px; 
+    max-width: 800px;
+    font-family: 'Segoe UI', sans-serif;
+    color: #333;
+    text-align: center;
 }
 
-.section-title.about-title {
-  font-size: 1.8rem;
-  font-weight: bold;
-  margin-bottom: 20px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  letter-spacing: 1px;
-  gap: 10px;
+/* Estilos de los títulos */
+.section-title {
+    font-size: 1.8rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    letter-spacing: 1px;
+    gap: 10px;
+    text-align: center;
+    color: #1e293b;
 }
 
-.section-body.about-body {
-  text-align: left; /* Ajustado para coincidir con la sección de Experiencia */
-  line-height: 1.8;
-  font-size: 1.10rem;
-  padding: 0 40px;
-  margin: 0 auto;
-  max-width: 800px;
+/* Estilos para el texto del cuerpo */
+.section-body {
+    font-size: 1.1rem;
+    line-height: 1.8;
+    color: #374151;
+    margin: 0 auto 30px; /* ✅ Cambio para centrar el párrafo */
+    font-family: 'Segoe UI', sans-serif;
+    text-align: left;
+    max-width: 800px; /* ✅ Añadido para que el texto no se extienda */
 }
 
+/* Estilos para el icono del título */
 .icon-gray {
-  width: 24px;
-  height: 24px;
-  vertical-align: middle;
-  color: #9b9b9b;
+    width: 24px;
+    height: 24px;
+    vertical-align: middle;
+    color: #9b9b9b;
+}
+
+.cv-section {
+    background-color: transparent;
+    padding-bottom: 0px;
+}
+
+
+@media (max-width: 768px) {
+    .about-section {
+        padding: 30px 20px 0px; 
+    }
+
+    .section-body {
+        padding: 0 20px; /* ✅ Más espacio en los lados para el texto */
+    }
 }
