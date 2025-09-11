@@ -5,12 +5,12 @@ import './Proyect.css';
 export default function Proyect({ language }) {
   const content = {
     es: {
-      title: 'Mis proyectos',
+      title: 'Proyectos',
       intro: `Aquí te muestro algunos de los proyectos que he realizado durante mi formación y experiencia como desarrolladora. Cada uno refleja mi evolución, creatividad y compromiso con el aprendizaje constante.`,
       buttonText: 'Ver todos los proyectos',
     },
     en: {
-      title: 'My Projects',
+      title: 'Projects',
       intro: `Here are some of the projects I’ve completed during my training and experience as a developer. Each one reflects my growth, creativity, and commitment to continuous learning.`,
       buttonText: 'View all projects',
     },

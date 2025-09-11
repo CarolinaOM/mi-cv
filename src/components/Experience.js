@@ -5,12 +5,12 @@ import './Experience.css';
 export default function Experience({ language }) {
   const content = {
     es: {
-      title: 'Mi Experiencia Profesional',
+      title: 'Experiencia Profesional',
       intro: `Explora mi trayectoria laboral, proyectos clave y logros. Haz clic en el botón para ver todos los detalles.`,
       buttonText: 'Ver Experiencia Completa',
     },
     en: {
-      title: 'My Professional Experience',
+      title: 'Professional Experience',
       intro: `Explore my work history, key projects, and achievements. Click the button to see all the details.`,
       buttonText: 'View Complete Experience',
     },
