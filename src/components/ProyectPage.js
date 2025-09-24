@@ -13,6 +13,7 @@ import femautoImg from '../assets/images/Femauto.png';
 import disneyImg from '../assets/images/Disney.png';
 import princessPeachImg from '../assets/images/Princess-Peach.png';
 import lamiradadetualmaImg from '../assets/images/La-Mirada-De-Tu-Alma.png';
+import taskImg from '../assets/images/task-app.png';
 
 export default function ProyectPage({ language, onLanguageChange }) {
   const content = {
@@ -58,6 +59,13 @@ export default function ProyectPage({ language, onLanguageChange }) {
           image: lamiradadetualmaImg,
           link: 'https://lamiradadetualma.netlify.app/',
           codeLink: 'https://github.com/CarolinaOM/la-mirada-de-tu-alma?tab=readme-ov-file',
+        },
+        {
+          title: 'Task App',
+          description: `Proyecto de lista de tareas completo, desarrollado con React y TypeScript. Demuestra habilidades en la gestión de estados con useReducer, el manejo de la API del navegador con useEffect y la creación de una interfaz de usuario limpia y responsiva.`,
+          image: taskImg,
+          link: 'https://my-list-task-app.netlify.app/',
+          codeLink: 'https://github.com/CarolinaOM/tasks-app?tab=readme-ov-file#una-aplicaci%C3%B3n-de-lista-de-tareas-simple-y-eficiente-construida-con-react-y-typescript',
         },
         
       ],
@@ -125,6 +133,13 @@ export default function ProyectPage({ language, onLanguageChange }) {
           link: 'https://lamiradadetualma.netlify.app/',
           codeLink: 'https://github.com/CarolinaOM/la-mirada-de-tu-alma?tab=readme-ov-file',
         },
+        {
+          title: 'Task App',
+          description: `A complete to-do list project developed with React and TypeScript. This project demonstrates skills in state management using useReducer, handling browser APIs with useEffect, and creating a clean, responsive user interface.`,
+          image: taskImg,
+          link: 'https://my-list-task-app.netlify.app/',
+          codeLink: 'https://github.com/CarolinaOM/tasks-app?tab=readme-ov-file#una-aplicaci%C3%B3n-de-lista-de-tareas-simple-y-eficiente-construida-con-react-y-typescript',
+        },
       ],
       professionalProjects: [
         {
@@ -153,7 +168,7 @@ export default function ProyectPage({ language, onLanguageChange }) {
 
   const getButtonClass = (title) => {
     const blueProjects = ['Buscador Disney', 'Disney Finder', 'Snake Game', 'La Table Du Chef', 'Taller Femauto', 'La Mirada De Tu Alma'];
-    const greenProjects = ['Piedra, Papel o Tijera', 'Rock, Paper, Scissors', 'Repuestos Uruguay', 'Princess Peach Showtime'];
+    const greenProjects = ['Piedra, Papel o Tijera', 'Rock, Paper, Scissors', 'Repuestos Uruguay', 'Princess Peach Showtime', 'Task App'];
     
     if (blueProjects.includes(title)) {
       return 'blue-gradient-button';
