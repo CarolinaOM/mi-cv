@@ -14,6 +14,7 @@ import disneyImg from '../assets/images/Disney.png';
 import princessPeachImg from '../assets/images/Princess-Peach.png';
 import lamiradadetualmaImg from '../assets/images/La-Mirada-De-Tu-Alma.png';
 import taskImg from '../assets/images/task-app.png';
+import macarmideliImg from '../assets/images/macarmideli.png'; 
 
 export default function ProyectPage({ language, onLanguageChange }) {
   const content = {
@@ -25,6 +26,20 @@ export default function ProyectPage({ language, onLanguageChange }) {
       buttonView: 'Ver proyecto',
       buttonCode: 'Código Fuente',
       personalProjects: [
+          {
+          title: 'MacarmiDeli',
+          description: `Sitio web oficial de pastelería artesanal, desarrollado con React, TypeScript y Tailwind CSS ademas se realizo la integración de formularios de contacto/pedidos.`,
+          image: macarmideliImg,
+          link: 'https://macarmideli.netlify.app/',
+          codeLink: 'https://github.com/CarolinaOM/web-restaurante',
+        },
+        {
+          title: 'La Mirada De Tu Alma',
+          description: `Este es un componente de contacto en React, diseñado para la web de La Mirada de tu Alma. Combina una estética mística y moderna con ilustraciones y un formulario de contacto, creado con la potencia de React, Vite y la flexibilidad de Tailwind CSS.`,
+          image: lamiradadetualmaImg,
+          link: 'https://lamiradadetualma.netlify.app/',
+          codeLink: 'https://github.com/CarolinaOM/la-mirada-de-tu-alma?tab=readme-ov-file',
+        },
         {
           title: 'Snake Game',
           description: `Juego clásico de la serpiente desarrollado con React, JavaScript, HTML y CSS. Interactivo, rápido y perfecto para practicar lógica, eventos del teclado y manejo de estado.`,
@@ -54,28 +69,22 @@ export default function ProyectPage({ language, onLanguageChange }) {
           codeLink: 'https://github.com/CarolinaOM/Api-Disney',
         },
         {
-          title: 'La Mirada De Tu Alma',
-          description: `Este es un componente de contacto en React, diseñado para la web de La Mirada de tu Alma. Combina una estética mística y moderna con ilustraciones y un formulario de contacto, creado con la potencia de React, Vite y la flexibilidad de Tailwind CSS.`,
-          image: lamiradadetualmaImg,
-          link: 'https://lamiradadetualma.netlify.app/',
-          codeLink: 'https://github.com/CarolinaOM/la-mirada-de-tu-alma?tab=readme-ov-file',
-        },
-        {
           title: 'Task App',
           description: `Proyecto de lista de tareas completo, desarrollado con React y TypeScript. Demuestra habilidades en la gestión de estados con useReducer, el manejo de la API del navegador con useEffect y la creación de una interfaz de usuario limpia y responsiva.`,
           image: taskImg,
           link: 'https://my-list-task-app.netlify.app/',
           codeLink: 'https://github.com/CarolinaOM/tasks-app?tab=readme-ov-file#una-aplicaci%C3%B3n-de-lista-de-tareas-simple-y-eficiente-construida-con-react-y-typescript',
-        },
-        
+        },        
       ],
       professionalProjects: [
+        /*
         {
           title: 'La Table Du Chef',
           description: `Desarrollo de una página web en WordPress para un centro de formación. Mi contribución fue la maquetación y publicación del sitio web.`,
           image: latableduchefImg,
           link: 'https://latableduchef.es/',
         },
+        */
         {
           title: 'Repuestos Uruguay',
           description: `Creación de la página web de la empresa utilizando HTML, CSS, JavaScript, Python y Bootstrap para mejorar la presencia digital y la interacción con los clientes.`,
@@ -98,6 +107,20 @@ export default function ProyectPage({ language, onLanguageChange }) {
       buttonView: 'View Project',
       buttonCode: 'Source Code',
       personalProjects: [
+        {
+          title: 'MacarmiDeli',
+          description: `Official website for artisanal pastry, developed with React, TypeScript and Tailwind CSS, and also integrated contact/order forms.`,
+          image: macarmideliImg,
+          link: 'https://macarmideli.netlify.app/',
+          codeLink: 'https://github.com/CarolinaOM/web-restaurante',
+        },
+        {
+          title: 'La Mirada De Tu Alma',
+          description: `This is a contact component in React, designed for the "La Mirada de tu Alma" website. It combines a mystical and modern aesthetic with illustrations and a contact form, created with the power of React, Vite, and the flexibility of Tailwind CSS.`,
+          image: lamiradadetualmaImg,
+          link: 'https://lamiradadetualma.netlify.app/',
+          codeLink: 'https://github.com/CarolinaOM/la-mirada-de-tu-alma?tab=readme-ov-file',
+        },
         {
           title: 'Snake Game',
           description: `Classic snake game developed with React, JavaScript, HTML, and CSS. Interactive, fast, and perfect for practicing logic, keyboard events, and state management.`,
@@ -127,13 +150,6 @@ export default function ProyectPage({ language, onLanguageChange }) {
           codeLink: 'https://github.com/CarolinaOM/Api-Disney',
         },
         {
-          title: 'La Mirada De Tu Alma',
-          description: `This is a contact component in React, designed for the "La Mirada de tu Alma" website. It combines a mystical and modern aesthetic with illustrations and a contact form, created with the power of React, Vite, and the flexibility of Tailwind CSS.`,
-          image: lamiradadetualmaImg,
-          link: 'https://lamiradadetualma.netlify.app/',
-          codeLink: 'https://github.com/CarolinaOM/la-mirada-de-tu-alma?tab=readme-ov-file',
-        },
-        {
           title: 'Task App',
           description: `A complete to-do list project developed with React and TypeScript. This project demonstrates skills in state management using useReducer, handling browser APIs with useEffect, and creating a clean, responsive user interface.`,
           image: taskImg,
@@ -142,12 +158,14 @@ export default function ProyectPage({ language, onLanguageChange }) {
         },
       ],
       professionalProjects: [
+        /*
         {
           title: 'La Table Du Chef',
           description: `WordPress website development for a training center. My contribution was the layout and publication of the page.`,
           image: latableduchefImg,
           link: 'https://latableduchef.es/',
         },
+        */
         {
           title: 'Repuestos Uruguay',
           description: `Creation of the company's website using HTML, CSS, JavaScript, Python, and Bootstrap to improve digital presence and customer interaction.`,
@@ -167,8 +185,8 @@ export default function ProyectPage({ language, onLanguageChange }) {
   const selected = content[language] || content['es'];
 
   const getButtonClass = (title) => {
-    const blueProjects = ['Buscador Disney', 'Disney Finder', 'Snake Game', 'La Table Du Chef', 'Taller Femauto', 'La Mirada De Tu Alma'];
-    const greenProjects = ['Piedra, Papel o Tijera', 'Rock, Paper, Scissors', 'Repuestos Uruguay', 'Princess Peach Showtime', 'Task App'];
+    const blueProjects = ['Buscador Disney', 'Disney Finder', 'Snake Game', 'La Table Du Chef', 'Taller Femauto', 'La Mirada De Tu Alma', 'Task App'];
+    const greenProjects = ['Piedra, Papel o Tijera', 'Rock, Paper, Scissors', 'Repuestos Uruguay', 'Princess Peach Showtime', 'MacarmiDeli'];
     
     if (blueProjects.includes(title)) {
       return 'blue-gradient-button';
