@@ -15,6 +15,7 @@ import princessPeachImg from '../assets/images/Princess-Peach.png';
 import lamiradadetualmaImg from '../assets/images/La-Mirada-De-Tu-Alma.png';
 import taskImg from '../assets/images/task-app.png';
 import macarmideliImg from '../assets/images/macarmideli.png'; 
+import movieHubImg from '../assets/images/peliculas.png'; 
 
 export default function ProyectPage({ language, onLanguageChange }) {
   const content = {
@@ -74,7 +75,14 @@ export default function ProyectPage({ language, onLanguageChange }) {
           image: taskImg,
           link: 'https://my-list-task-app.netlify.app/',
           codeLink: 'https://github.com/CarolinaOM/tasks-app?tab=readme-ov-file#una-aplicaci%C3%B3n-de-lista-de-tareas-simple-y-eficiente-construida-con-react-y-typescript',
-        },        
+        },    
+        {
+          title: 'MovieHub',
+          description: `Simulación de cartelera de cine con un diseño moderno y oscuro, construida con React, TypeScript y Tailwind CSS. Muestra la cartelera completa con horarios y simulación de venta de boletos. Incluye página de detalle con tráiler integrado.`,
+          image: movieHubImg,
+          link: 'https://movie-hub-cartelera.netlify.app/',
+          codeLink: 'https://github.com/CarolinaOM/movie-hub',
+        },    
       ],
       professionalProjects: [
         /*
@@ -156,6 +164,13 @@ export default function ProyectPage({ language, onLanguageChange }) {
           link: 'https://my-list-task-app.netlify.app/',
           codeLink: 'https://github.com/CarolinaOM/tasks-app?tab=readme-ov-file#una-aplicaci%C3%B3n-de-lista-de-tareas-simple-y-eficiente-construida-con-react-y-typescript',
         },
+        {
+          title: 'MovieHub',
+          description: `A movie billboard simulation web application built with React, TypeScript, and Tailwind CSS, featuring a modern, dark design and amber gold accents. It displays the full movie catalog with showtimes and ticket purchase simulation.`,
+          image: movieHubImg,
+          link: 'https://movie-hub-cartelera.netlify.app/',
+          codeLink: 'https://github.com/CarolinaOM/movie-hub',
+        },
       ],
       professionalProjects: [
         /*
@@ -186,7 +201,7 @@ export default function ProyectPage({ language, onLanguageChange }) {
 
   const getButtonClass = (title) => {
     const blueProjects = ['Buscador Disney', 'Disney Finder', 'Snake Game', 'La Table Du Chef', 'Taller Femauto', 'La Mirada De Tu Alma', 'Task App'];
-    const greenProjects = ['Piedra, Papel o Tijera', 'Rock, Paper, Scissors', 'Repuestos Uruguay', 'Princess Peach Showtime', 'MacarmiDeli'];
+    const greenProjects = ['Piedra, Papel o Tijera', 'Rock, Paper, Scissors', 'Repuestos Uruguay', 'Princess Peach Showtime', 'MacarmiDeli', 'MovieHub'];
     
     if (blueProjects.includes(title)) {
       return 'blue-gradient-button';
