@@ -5,7 +5,7 @@ Bienvenido/a a mi currículum web interactivo, desarrollado con React como parte
 ✨ La interfaz está diseñada para ofrecer una navegación intuitiva y una presentación clara de mi perfil técnico, combinando diseño con propósito y eficiencia.
 
 ## 
-**![CV Web de Carolina Ordoñez](mi-cv.png)**
+**![CV Web de Carolina Ordoñez](src/assets/images/mi-cv.png)**
 
 🔗 **Versión en línea:** [https://carolina-ordonez-sites.netlify.app/](https://carolina-ordonez-sites.netlify.app/)
 
