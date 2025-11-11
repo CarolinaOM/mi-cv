@@ -16,6 +16,7 @@ import lamiradadetualmaImg from '../assets/images/La-Mirada-De-Tu-Alma.png';
 import taskImg from '../assets/images/task-app.png';
 import macarmideliImg from '../assets/images/macarmideli.png'; 
 import movieHubImg from '../assets/images/peliculas.png'; 
+import lejosDeCasaImg from '../assets/images/lejos-de-casa.png';
 
 export default function ProyectPage({ language, onLanguageChange }) {
   const content = {
@@ -93,6 +94,12 @@ export default function ProyectPage({ language, onLanguageChange }) {
           link: 'https://latableduchef.es/',
         },
         */
+        {
+          title: 'Asociacion Lejos De Casa',
+          description: `Desarrollo de la web oficial para una organización sin fines de lucro, brindando apoyo a migrantes. Construida como una SPA utilizando React, Vite, TypeScript, y Tailwind CSS, con enfoque en la integración y la convivencia intercultural.`,
+          image: lejosDeCasaImg,
+          link: 'https://asociacionlejosdecasa.org/',
+        },
         {
           title: 'Repuestos Uruguay',
           description: `Creación de la página web de la empresa utilizando HTML, CSS, JavaScript, Python y Bootstrap para mejorar la presencia digital y la interacción con los clientes.`,
@@ -182,6 +189,12 @@ export default function ProyectPage({ language, onLanguageChange }) {
         },
         */
         {
+          title: 'Asociacion Lejos De Casa',
+          description: `Official website development for a non-profit organization providing support to migrants. Built as an SPA using React, Vite, TypeScript, and Tailwind CSS, focusing on integration and intercultural coexistence.`,
+          image: lejosDeCasaImg,
+          link: 'https://asociacionlejosdecasa.org/',
+        },
+        {
           title: 'Repuestos Uruguay',
           description: `Creation of the company's website using HTML, CSS, JavaScript, Python, and Bootstrap to improve digital presence and customer interaction.`,
           image: repuestosuruguayImg,
@@ -200,8 +213,8 @@ export default function ProyectPage({ language, onLanguageChange }) {
   const selected = content[language] || content['es'];
 
   const getButtonClass = (title) => {
-    const blueProjects = ['Buscador Disney', 'Disney Finder', 'Snake Game', 'La Table Du Chef', 'Taller Femauto', 'La Mirada De Tu Alma', 'Task App'];
-    const greenProjects = ['Piedra, Papel o Tijera', 'Rock, Paper, Scissors', 'Repuestos Uruguay', 'Princess Peach Showtime', 'MacarmiDeli', 'MovieHub'];
+    const blueProjects = ['Buscador Disney', 'Disney Finder', 'Snake Game', 'La Table Du Chef', 'La Mirada De Tu Alma', 'Task App', 'Repuestos Uruguay'];
+    const greenProjects = ['Piedra, Papel o Tijera', 'Rock, Paper, Scissors', 'Princess Peach Showtime', 'MacarmiDeli', 'MovieHub', 'Asociacion Lejos De Casa', 'Taller Femauto',];
     
     if (blueProjects.includes(title)) {
       return 'blue-gradient-button';
