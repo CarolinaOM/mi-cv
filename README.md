@@ -28,14 +28,16 @@ Este repositorio incluye todos los archivos fuente del proyecto, configuraciones
 
 ## 🎮 Proyectos destacados
 
+* **La Mirada De Tu Alma**
+    Creación de la página web, que combina una estética mística y moderna con ilustraciones y un formulario de contacto, creado con la potencia de React, Vite y la flexibilidad de Tailwind CSS.
 * **Snake Game**: Juego clásico de la serpiente, ideal para practicar lógica y manejo de estado.
 * **Piedra, Papel o Tijera**: Juego interactivo contra el sistema, ¡perfecto para divertirse y aprender!
 * **Princess Peach Showtime**
     Página web informativa sobre el videojuego de Nintendo *Princess Peach Showtime*. Creada con React, Vite y CSS, explora personajes, escenarios y la fecha de lanzamiento.
 * **Buscador Disney**
     Buscador interactivo donde, al seleccionar una letra del abecedario, se descubren personajes de Disney que comiencen con esa letra. Muestra foto y breve descripción.
-* **La Table Du Chef**
-    Desarrollo de una página web en WordPress para un centro de formación. Contribución en la maquetación y publicación del sitio web.
+* **Asociacion Lejos De Casa**
+    Creación de la página web para una organización sin fines de lucro, brindando apoyo a migrantes. Construida como una SPA utilizando React, Vite, TypeScript, y Tailwind CSS, con enfoque en la integración y la convivencia intercultural.
 * **Repuestos Uruguay**
     Creación de la página web de la empresa utilizando HTML, CSS, JavaScript, Python y Bootstrap, mejorando la presencia digital y la interacción con clientes.
 * **Taller Femauto**
