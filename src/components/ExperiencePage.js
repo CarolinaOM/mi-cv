@@ -12,6 +12,7 @@ export default function ExperiencePage({ language, onLanguageChange }) {
       entries: [
         {
           title: 'Programadora – CENIT',
+          link: 'https://www.cenitcon.com/',
           dates: 'Diciembre 2025 – Agosto 2026',
           details: [
             'Mantenimiento de portales web desarrollados con Liferay.',
@@ -58,6 +59,7 @@ export default function ExperiencePage({ language, onLanguageChange }) {
         },
         {
           title: 'Administrador de Aplicaciones de Escritorio – Alcaldía Municipio Los Salias',
+          link: 'https://www.alcaldialossalias.gob.ve/',
           dates: 'Abril 2016 – Julio 2017',
           details: [
             'Desarrollo y mantenimiento de aplicaciones administrativas internas.',
@@ -67,6 +69,7 @@ export default function ExperiencePage({ language, onLanguageChange }) {
         },
         {
           title: 'Soporte Técnico – Alcaldía Municipio Los Salias',
+          link: 'https://www.alcaldialossalias.gob.ve/',
           dates: 'Febrero 2015 – Abril 2015',
           details: [
             'Desarrollo de sistema de inventario con mejora del 30% en eficiencia.',
@@ -97,6 +100,7 @@ export default function ExperiencePage({ language, onLanguageChange }) {
       entries: [
          {
           title: 'Developer – CENIT',
+          link: 'https://www.cenitcon.com/',
           dates: 'December 2025 – August 2026',
           details: [
             'Maintenance of websites developed with Liferay.',
@@ -143,6 +147,7 @@ export default function ExperiencePage({ language, onLanguageChange }) {
         },
         {
           title: 'Desktop Application Administrator – Los Salias Municipality',
+          link: 'https://www.alcaldialossalias.gob.ve/',
           dates: 'April 2016 – July 2017',
           details: [
             'Developed and maintained internal administrative applications.',
@@ -152,6 +157,7 @@ export default function ExperiencePage({ language, onLanguageChange }) {
         },
         {
           title: 'Technical Support – Los Salias Municipality',
+          link: 'https://www.alcaldialossalias.gob.ve/',
           dates: 'February 2015 – April 2015',
           details: [
             'Developed inventory system with 30% efficiency improvement.',
