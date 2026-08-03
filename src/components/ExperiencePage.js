@@ -11,6 +11,14 @@ export default function ExperiencePage({ language, onLanguageChange }) {
       backButton: '← Volver al CV',
       entries: [
         {
+          title: 'Programadora – CENIT',
+          dates: 'Diciembre 2025 – Agosto 2026',
+          details: [
+            'Mantenimiento de portales web desarrollados con Liferay.',
+            'Implementación de funcionalidades para una aplicación web de agrometeorología.'
+          ],
+        },
+        {
           title: 'Programadora Frontend – INTRASOFT',
           dates: 'Marzo 2023 – Julio 2024',
           details: [
@@ -87,6 +95,14 @@ export default function ExperiencePage({ language, onLanguageChange }) {
       pageTitle: 'My Full Professional Experience',
       backButton: '← Back to CV',
       entries: [
+         {
+          title: 'Developer – CENIT',
+          dates: 'December 2025 – August 2026',
+          details: [
+            'Maintenance of websites developed with Liferay.',
+            'Implementation of features for a web application about agrometeorology.'
+          ],
+        },
         {
           title: 'Frontend Developer – INTRASOFT',
           dates: 'March 2023 – July 2024',

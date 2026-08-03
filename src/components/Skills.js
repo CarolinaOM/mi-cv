@@ -13,8 +13,8 @@ export default function Skills({ language }) {
     es: {
       title: 'Habilidades',
       categories: [
-        { icon: <Code className="icon-skill" />, label: 'Lenguajes', value: 'JavaScript, HTML, CSS, PHP, Java, Flutter' },
-        { icon: <Boxes className="icon-skill" />, label: 'Frameworks', value: 'Vue.js, Node.js, WordPress, React' },
+        { icon: <Code className="icon-skill" />, label: 'Lenguajes', value: 'JavaScript, HTML, CSS, PHP, Java' },
+        { icon: <Boxes className="icon-skill" />, label: 'Frameworks', value: 'Vue.js, Node.js, WordPress, React, Flutter, Liferay, Spring Boot' },
         { icon: <Database className="icon-skill" />, label: 'Bases de datos', value: 'SQL, Access' },
         { icon: <Wrench className="icon-skill" />, label: 'Herramientas', value: 'Git, Canva' },
         { icon: <Monitor className="icon-skill" />, label: 'Sistemas operativos', value: 'Windows, Linux' },
@@ -23,8 +23,8 @@ export default function Skills({ language }) {
     en: {
       title: 'Skills',
       categories: [
-        { icon: <Code className="icon-skill" />, label: 'Languages', value: 'JavaScript, HTML, CSS, PHP, Java, Flutter' },
-        { icon: <Boxes className="icon-skill" />, label: 'Frameworks', value: 'Vue.js, Node.js, WordPress, React' },
+        { icon: <Code className="icon-skill" />, label: 'Languages', value: 'JavaScript, HTML, CSS, PHP, Java' },
+        { icon: <Boxes className="icon-skill" />, label: 'Frameworks', value: 'Vue.js, Node.js, WordPress, React, Flutter, Liferay, Spring Boot' },
         { icon: <Database className="icon-skill" />, label: 'Databases', value: 'SQL, Access' },
         { icon: <Wrench className="icon-skill" />, label: 'Tools', value: 'Git, Canva' },
         { icon: <Monitor className="icon-skill" />, label: 'Operating Systems', value: 'Windows, Linux' },
