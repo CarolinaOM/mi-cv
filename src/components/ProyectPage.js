@@ -17,6 +17,7 @@ import taskImg from '../assets/images/task-app.png';
 import macarmideliImg from '../assets/images/macarmideli.png'; 
 import movieHubImg from '../assets/images/peliculas.png'; 
 import lejosDeCasaImg from '../assets/images/lejos-de-casa.png';
+import ClimaImg from '../assets/images/Clima.png';
 
 export default function ProyectPage({ language, onLanguageChange }) {
   const content = {
@@ -83,6 +84,13 @@ export default function ProyectPage({ language, onLanguageChange }) {
           image: movieHubImg,
           link: 'https://movie-hub-cartelera.netlify.app/',
           codeLink: 'https://github.com/CarolinaOM/movie-hub',
+        },
+        {
+          title: 'Atmos',
+          description: `Aplicación del clima moderna desarrollada con React y Vite que permite consultar el tiempo en tiempo real de cualquier ciudad. Incluye información detallada como temperatura, sensación térmica, humedad, viento y pronóstico, con una interfaz responsive y una experiencia de usuario intuitiva.`,
+          image: ClimaImg,
+          link: 'https://atmos-weather-app-ts.netlify.app/',
+          codeLink: 'https://github.com/CarolinaOM/Atmos',
         },    
       ],
       professionalProjects: [
@@ -178,6 +186,13 @@ export default function ProyectPage({ language, onLanguageChange }) {
           link: 'https://movie-hub-cartelera.netlify.app/',
           codeLink: 'https://github.com/CarolinaOM/movie-hub',
         },
+         {
+          title: 'Atmos',
+          description: `Modern weather application built with React and Vite that allows users to check real-time weather conditions for any city. It provides detailed information such as temperature, feels-like temperature, humidity, wind speed, and weather forecasts, all presented through a responsive interface and an intuitive user experience.`,
+          image: ClimaImg,
+          link: 'https://atmos-weather-app-ts.netlify.app/',
+          codeLink: 'https://github.com/CarolinaOM/Atmos',
+        },   
       ],
       professionalProjects: [
         /*
