@@ -228,7 +228,7 @@ export default function ProyectPage({ language, onLanguageChange }) {
   const selected = content[language] || content['es'];
 
   const getButtonClass = (title) => {
-    const blueProjects = ['Buscador Disney', 'Disney Finder', 'Snake Game', 'La Table Du Chef', 'La Mirada De Tu Alma', 'Task App', 'Repuestos Uruguay'];
+    const blueProjects = ['Buscador Disney', 'Disney Finder', 'Snake Game', 'La Table Du Chef', 'La Mirada De Tu Alma', 'Task App', 'Repuestos Uruguay', 'Atmos'];
     const greenProjects = ['Piedra, Papel o Tijera', 'Rock, Paper, Scissors', 'Princess Peach Showtime', 'MacarmiDeli', 'MovieHub', 'Asociacion Lejos De Casa', 'Taller Femauto',];
     
     if (blueProjects.includes(title)) {
@@ -281,7 +281,6 @@ export default function ProyectPage({ language, onLanguageChange }) {
         <LanguageToggle language={language} onLanguageChange={onLanguageChange} />
       </div>
 
-      {/* ✅ Botón de volver con el degradado verde */}
       <Link to="/" className="back-button green-gradient-button">
         {selected.backButton}
       </Link>
