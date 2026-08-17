@@ -18,6 +18,7 @@ import macarmideliImg from '../assets/images/macarmideli.png';
 import movieHubImg from '../assets/images/peliculas.png'; 
 import lejosDeCasaImg from '../assets/images/lejos-de-casa.png';
 import ClimaImg from '../assets/images/Clima.png';
+import CafeteriaImg from '../assets/images/cafeteria.png';
 
 export default function ProyectPage({ language, onLanguageChange }) {
   const content = {
@@ -91,7 +92,14 @@ export default function ProyectPage({ language, onLanguageChange }) {
           image: ClimaImg,
           link: 'https://atmos-weather-app-ts.netlify.app/',
           codeLink: 'https://github.com/CarolinaOM/Atmos',
-        },    
+        }, 
+        {
+          title: 'Coffee House',
+          description: `Aplicación web moderna y elegante desarrollada para una cafetería artesanal. Cuenta con un menú interactivo en tiempo real conectado a una base de datos en la nube, galerías de imágenes y una interfaz completamente responsive diseñada con un enfoque en el rendimiento y la experiencia de usuario`,
+          image: CafeteriaImg,
+          link: 'coffeehouse-project.netlify.app',
+          codeLink: 'github.com/CarolinaOM/coffee-house',
+        },   
       ],
       professionalProjects: [
         /*
@@ -192,7 +200,14 @@ export default function ProyectPage({ language, onLanguageChange }) {
           image: ClimaImg,
           link: 'https://atmos-weather-app-ts.netlify.app/',
           codeLink: 'https://github.com/CarolinaOM/Atmos',
-        },   
+        },  
+        {
+          title: 'Coffee House',
+          description: `A modern and elegant web application developed for an artisanal coffee shop. It features a real-time interactive menu connected to a cloud database, image galleries, and a fully responsive interface designed with a focus on performance and user experience.`,
+          image: CafeteriaImg,
+          link: 'coffeehouse-project.netlify.app',
+          codeLink: 'github.com/CarolinaOM/coffee-house',
+        },
       ],
       professionalProjects: [
         /*
@@ -229,7 +244,7 @@ export default function ProyectPage({ language, onLanguageChange }) {
 
   const getButtonClass = (title) => {
     const blueProjects = ['Buscador Disney', 'Disney Finder', 'Snake Game', 'La Table Du Chef', 'La Mirada De Tu Alma', 'Task App', 'Repuestos Uruguay', 'Atmos'];
-    const greenProjects = ['Piedra, Papel o Tijera', 'Rock, Paper, Scissors', 'Princess Peach Showtime', 'MacarmiDeli', 'MovieHub', 'Asociacion Lejos De Casa', 'Taller Femauto',];
+    const greenProjects = ['Piedra, Papel o Tijera', 'Rock, Paper, Scissors', 'Princess Peach Showtime', 'MacarmiDeli', 'MovieHub', 'Asociacion Lejos De Casa', 'Taller Femauto','Coffee House'];
     
     if (blueProjects.includes(title)) {
       return 'blue-gradient-button';
