@@ -97,8 +97,8 @@ export default function ProyectPage({ language, onLanguageChange }) {
           title: 'Coffee House',
           description: `Aplicación web moderna y elegante desarrollada para una cafetería artesanal. Cuenta con un menú interactivo en tiempo real conectado a una base de datos en la nube, galerías de imágenes y una interfaz completamente responsive diseñada con un enfoque en el rendimiento y la experiencia de usuario`,
           image: CafeteriaImg,
-          link: 'coffeehouse-project.netlify.app',
-          codeLink: 'github.com/CarolinaOM/coffee-house',
+          link: 'https://coffeehouse-project.netlify.app/',
+          codeLink: 'https://github.com/CarolinaOM/coffee-house',
         },   
       ],
       professionalProjects: [
@@ -205,8 +205,8 @@ export default function ProyectPage({ language, onLanguageChange }) {
           title: 'Coffee House',
           description: `A modern and elegant web application developed for an artisanal coffee shop. It features a real-time interactive menu connected to a cloud database, image galleries, and a fully responsive interface designed with a focus on performance and user experience.`,
           image: CafeteriaImg,
-          link: 'coffeehouse-project.netlify.app',
-          codeLink: 'github.com/CarolinaOM/coffee-house',
+          link: 'https://coffeehouse-project.netlify.app/',
+          codeLink: 'https://github.com/CarolinaOM/coffee-house',
         },
       ],
       professionalProjects: [
