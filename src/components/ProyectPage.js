@@ -19,6 +19,7 @@ import movieHubImg from '../assets/images/peliculas.png';
 import lejosDeCasaImg from '../assets/images/lejos-de-casa.png';
 import ClimaImg from '../assets/images/Clima.png';
 import CafeteriaImg from '../assets/images/cafeteria.png';
+import StockTrackerImg from '../assets/images/proyecto.png';
 
 export default function ProyectPage({ language, onLanguageChange }) {
   const content = {
@@ -100,6 +101,13 @@ export default function ProyectPage({ language, onLanguageChange }) {
           link: 'https://coffeehouse-project.netlify.app/',
           codeLink: 'https://github.com/CarolinaOM/coffee-house',
         },   
+        {
+          title: 'StockTracker',
+          description: `Aplicación web moderna desarrollada para el seguimiento de activos. Cuenta con un sistema de consulta de cotizaciones y base de datos, métricas detalladas de mercado y una interfaz completamente responsive`,
+          image: StockTrackerImg,
+          link: 'https://stock-tracke-app.netlify.app/',
+          codeLink: 'https://github.com/CarolinaOM/stock-tracker/tree/main',
+        },
       ],
       professionalProjects: [
         /*
@@ -208,6 +216,13 @@ export default function ProyectPage({ language, onLanguageChange }) {
           link: 'https://coffeehouse-project.netlify.app/',
           codeLink: 'https://github.com/CarolinaOM/coffee-house',
         },
+         {
+          title: 'StockTracker',
+          description: `Modern web application developed for asset tracking. It features a quote lookup system and database, detailed market metrics, and a fully responsive interface.`,
+          image: StockTrackerImg,
+          link: 'https://stock-tracke-app.netlify.app/',
+          codeLink: 'https://github.com/CarolinaOM/stock-tracker/tree/main',
+        },
       ],
       professionalProjects: [
         /*
@@ -243,7 +258,7 @@ export default function ProyectPage({ language, onLanguageChange }) {
   const selected = content[language] || content['es'];
 
   const getButtonClass = (title) => {
-    const blueProjects = ['Buscador Disney', 'Disney Finder', 'Snake Game', 'La Table Du Chef', 'La Mirada De Tu Alma', 'Task App', 'Repuestos Uruguay', 'Atmos'];
+    const blueProjects = ['Buscador Disney', 'Disney Finder', 'Snake Game', 'La Table Du Chef', 'La Mirada De Tu Alma', 'Task App', 'Repuestos Uruguay', 'Atmos', 'StockTracker'];
     const greenProjects = ['Piedra, Papel o Tijera', 'Rock, Paper, Scissors', 'Princess Peach Showtime', 'MacarmiDeli', 'MovieHub', 'Asociacion Lejos De Casa', 'Taller Femauto','Coffee House'];
     
     if (blueProjects.includes(title)) {
