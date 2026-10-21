@@ -110,7 +110,7 @@ export default function ProyectPage({ language, onLanguageChange }) {
           codeLink: 'https://github.com/CarolinaOM/stock-tracker/tree/main',
         },
         {
-          title: 'proyecto Flow',
+          title: 'Proyecto Flow',
           description: `Herramienta para la organización de tareas distribuidas en columnas de Por Hacer, En Proceso y Hecho`,
           image: proyectoFlowImg,
           link: 'https://app-project-flow.netlify.app/',
@@ -232,7 +232,7 @@ export default function ProyectPage({ language, onLanguageChange }) {
           codeLink: 'https://github.com/CarolinaOM/stock-tracker/tree/main',
         },
         {
-          title: 'proyecto Flow',
+          title: 'Proyecto Flow',
           description: `Tool for organizing tasks into columns for To Do, In Progress, and Done`,
           image: proyectoFlowImg,
           link: 'https://app-project-flow.netlify.app/',

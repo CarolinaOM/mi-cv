@@ -29,7 +29,7 @@ export default function ExperiencePage({ language, onLanguageChange }) {
           ],
         },
         {
-          title: 'Programadora Web – REPUESTOS URUGUAY',
+          title: 'Programadora Web – Repuestos Uruguay',
           link: 'https://repuestosuruguay.es/',
           dates: 'Febrero 2022 – Marzo 2023',
           details: [
@@ -117,7 +117,7 @@ export default function ExperiencePage({ language, onLanguageChange }) {
           ],
         },
         {
-          title: 'Web Developer – REPUESTOS URUGUAY',
+          title: 'Web Developer – Repuestos Uruguay',
           link: 'https://repuestosuruguay.es/',
           dates: 'February 2022 – March 2023',
           details: [
