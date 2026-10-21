@@ -20,6 +20,7 @@ import lejosDeCasaImg from '../assets/images/lejos-de-casa.png';
 import ClimaImg from '../assets/images/Clima.png';
 import CafeteriaImg from '../assets/images/cafeteria.png';
 import StockTrackerImg from '../assets/images/proyecto.png';
+import proyectoFlowImg from '../assets/images/proyectoFlow.png';
 
 export default function ProyectPage({ language, onLanguageChange }) {
   const content = {
@@ -107,6 +108,13 @@ export default function ProyectPage({ language, onLanguageChange }) {
           image: StockTrackerImg,
           link: 'https://stock-tracke-app.netlify.app/',
           codeLink: 'https://github.com/CarolinaOM/stock-tracker/tree/main',
+        },
+        {
+          title: 'proyecto Flow',
+          description: `Herramienta para la organización de tareas distribuidas en columnas de Por Hacer, En Proceso y Hecho`,
+          image: proyectoFlowImg,
+          link: 'https://app-project-flow.netlify.app/',
+          codeLink: 'https://github.com/CarolinaOM/project-flow',
         },
       ],
       professionalProjects: [
@@ -223,6 +231,13 @@ export default function ProyectPage({ language, onLanguageChange }) {
           link: 'https://stock-tracke-app.netlify.app/',
           codeLink: 'https://github.com/CarolinaOM/stock-tracker/tree/main',
         },
+        {
+          title: 'proyecto Flow',
+          description: `Tool for organizing tasks into columns for To Do, In Progress, and Done`,
+          image: proyectoFlowImg,
+          link: 'https://app-project-flow.netlify.app/',
+          codeLink: 'https://github.com/CarolinaOM/project-flow',
+        },
       ],
       professionalProjects: [
         /*
@@ -259,7 +274,7 @@ export default function ProyectPage({ language, onLanguageChange }) {
 
   const getButtonClass = (title) => {
     const blueProjects = ['Buscador Disney', 'Disney Finder', 'Snake Game', 'La Table Du Chef', 'La Mirada De Tu Alma', 'Task App', 'Repuestos Uruguay', 'Atmos', 'StockTracker'];
-    const greenProjects = ['Piedra, Papel o Tijera', 'Rock, Paper, Scissors', 'Princess Peach Showtime', 'MacarmiDeli', 'MovieHub', 'Asociacion Lejos De Casa', 'Taller Femauto','Coffee House'];
+    const greenProjects = ['Piedra, Papel o Tijera', 'Rock, Paper, Scissors', 'Princess Peach Showtime', 'MacarmiDeli', 'MovieHub', 'Asociacion Lejos De Casa', 'Taller Femauto','Coffee House', 'proyecto Flow'];
     
     if (blueProjects.includes(title)) {
       return 'blue-gradient-button';
